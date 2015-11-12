@@ -1,0 +1,72 @@
+/********************************
+STANDARD PAGE RULES
+*********************************/
+#wrapper {
+    max-width: 1000px;
+    min-height: 100%;
+    position: relative;
+    margin-bottom: -40px;
+}
+#wrapper:after {
+    content: "";
+    display: block;
+}
+img {
+    max-width: 100%;
+}
+li {
+    list-style: none;
+}
+a:visited {
+    color: #999;
+}
+/********************************
+FLEXBOX
+*********************************/
+.choices {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.choices li {
+    margin: auto;
+}
+/********************************
+NAVBAR
+*********************************/
+.navbar {
+    margin-bottom: 0px;
+}
+#pic-die {
+    margin-top: -10px;
+}
+/********************************
+PADDING & MARGINS
+*********************************/
+h1 {
+    padding-left: 100px;
+}
+p,
+form {
+    padding: 20px 0px 20px 100px;
+}
+.jumbotron p {
+    margin: 0px;
+}
+form {
+    display: inline-block;
+}
+button {
+    display: inline-block;
+    margin-left: 50px;
+    padding: 10px;
+    width: 200px;
+}
+label,
+input {
+    padding-right: 20px;
+}
+footer {
+    padding: 0px;
+}
