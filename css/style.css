@@ -84,8 +84,13 @@ footer {
     font-size: 0.35em;
 }
 /* COLORS ____________________________________*/
+.icon-google-plus,
+.icon-twitter {
+    color: #3EB354; /* lime green */
+}
 a:link,
 a:visited,
+.ah,
 footer,
 .jumbotron h1 {
     color: #009999; /* teal */
@@ -107,10 +112,6 @@ footer,
     background: url("../img/retina_wood_@2X.png");
     border-top: 2px solid #DEAE0C; /* orange */
     border-bottom: 2px solid #DEAE0C; /* orange */
-}
-.icon-google-plus,
-.icon-twitter {
-    color: #3EB354; /* lime green */
 }
 .tag {
     color: black;
@@ -135,13 +136,16 @@ button {
     display: inline-block;
 }
 .contactUs {
-    height: 350px;
+    height: 400px;
 }
 footer {
     text-align: center;
 }
 h1 {
     padding-left: 35px;
+}
+.contact-info {
+    margin: 20px 50px;
 }
 .icon-google-plus,
 .icon-twitter {
