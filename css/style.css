@@ -52,12 +52,14 @@ ul {
 body {
     font-family: 'Montserrat', sans-serif;
 }
-.about,
+.about-main,
+.about-secondary,
 .contactUs,
 .contact button {
     font-size: 1.25em;
 }
-.about,
+.about-main,
+.about-secondary,
 .contact {
     text-align: justify;
 }
@@ -118,10 +120,9 @@ footer,
 }
 /* SPACING ____________________________________*/
 .about-main,
-.about-secondary,
 .contact {
     margin-top: 15px;
-    height: 800px;
+    height: 750px;
 }
 button {
     display: inline-block;

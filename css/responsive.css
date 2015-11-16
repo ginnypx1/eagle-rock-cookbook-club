@@ -4,6 +4,9 @@
 	/*body {
 		background-color: purple;
 	}*/
+	.about-main {
+		height: 1150px;
+	}
 	.jumbotron p {
 		padding: 10px 30px;
 	}
@@ -12,9 +15,6 @@
 	}
 	.contact {
 		height: 400px;
-	}
-	.about-main {
-		height: 900px;
 	}
 	.contactUs {
 		height: 600px;
@@ -27,7 +27,7 @@
 		background-color: red;
 	}*/
 	.about-main {
-		height: 550px;
+		height: 900px;
 	}
 	.contact {
 		height: 300px;
@@ -59,9 +59,8 @@
 		width: 10%;
 		height: 10%;
 	}
-	.about-main,
-	.about-secondary {
-		height: 350px;
+	.about-main {
+		height: 500px;
 	}
 	.contact {
 		height: 200px;
