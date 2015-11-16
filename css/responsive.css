@@ -7,9 +7,6 @@
 	.about-main {
 		height: 1150px;
 	}
-	.about-secondary {
-		height: 1450px;
-	}
 	.jumbotron p {
 		padding: 10px 30px;
 	}
@@ -31,9 +28,6 @@
 	}*/
 	.about-main {
 		height: 900px;
-	}
-	.about-secondary {
-		height: 1000px;
 	}
 	.contact {
 		height: 300px;
@@ -65,8 +59,7 @@
 		width: 10%;
 		height: 10%;
 	}
-	.about-main,
-	.about-secondary {
+	.about-main {
 		height: 500px;
 	}
 	.contact {
