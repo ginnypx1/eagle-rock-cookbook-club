@@ -1,33 +1,50 @@
 
 /*PHONES to iPHONES*/
-@media screen and (min-width: 320px) {
-	/*body {
-		background-color: purple;
-	}*/
-	.about-main {
-		height: 1150px;
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+	body {
+		background-color: red;
 	}
-	.jumbotron p {
-		padding: 10px 30px;
-	}
-	.choices img {
-		margin: 5px 0px;
-	}
-	.contact {
-		height: 400px;
-	}
+
+
 	.contactUs {
 		height: 600px;
 	}
 }
 
-/*iPHONES to WINDOWS PHONES*/
-@media screen and (min-width: 640px) {
-	/*body {
-		background-color: red;
-	}*/
+/*iPHONES6 to GALAXY*/
+@media only screen and (min-width: 360px) and (max-width: 640px) {
+	body {
+		background-color: orange;
+	}
 	.about-main {
-		height: 900px;
+		height: 1150px;
+	}
+	.contact {
+		height: 400px;
+	}
+	.time-info {
+		font-size: 4em;
+		text-align: center;
+	}
+	.jumbotron p {
+		padding: 10px 30px;
+	}
+	.jumbotron h1 {
+		font-size: 6em;
+		padding-left: 30px;
+	}
+}
+
+/*TABLETS*/
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+	body {
+		background-color: yellow;
+	}
+	.time-info {
+		text-align: center;
+	}
+	.jumbotron p {
+		padding-left: 30px;
 	}
 	.contact {
 		height: 300px;
