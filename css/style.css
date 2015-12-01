@@ -84,12 +84,19 @@ footer,
 footer {
     font-size: 1.5em;
 }
+.picks {
+    text-align: center;
+}
+.picks ul li {
+    font-size: 1.25em;
+}
 .tag {
     font-size: 0.35em;
 }
 /* COLORS ____________________________________*/
 .icon-google-plus,
-.icon-twitter {
+.icon-twitter,
+.dish {
     color: #3EB354; /* lime green */
 }
 a:link,
@@ -97,12 +104,14 @@ a:visited,
 .ah,
 footer,
 .jumbotron h1,
+.picks h2,
 .time-info {
     color: #009999; /* teal */
 }
 a:hover,
 a:active,
 .contactDetails h2,
+.name,
 strong {
     color: #DEAE0C; /* orange */
 }
@@ -115,6 +124,10 @@ button a:visited,
 footer,
 .jumbotron {
     background: url("../img/retina_wood_@2X.png");
+    border-top: 2px solid #DEAE0C; /* orange */
+    border-bottom: 2px solid #DEAE0C; /* orange */
+}
+.picks {
     border-top: 2px solid #DEAE0C; /* orange */
     border-bottom: 2px solid #DEAE0C; /* orange */
 }
@@ -154,6 +167,9 @@ h1 {
 .icon-google-plus,
 .icon-twitter {
     margin-left: 50px;
+}
+.picks {
+    padding: 15px 0px;
 }
 /* ICONS ____________________________________*/
 @font-face {
