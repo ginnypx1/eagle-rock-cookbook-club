@@ -30,6 +30,18 @@ ul {
 .choices li {
     margin: auto;
 }
+.photos {
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    -webkit-justify-content: center;
+    justify-content: space-around;
+}
+.photos li {
+    margin: 10px;
+    border: 2px solid #DEAE0C; /* orange */
+}
 /* NAVBAR ____________________________________*/
 .navbar {
     margin-bottom: 0px;
@@ -54,13 +66,17 @@ body {
 }
 .about-main,
 .about-secondary,
+.blog-text,
 .contactUs,
-.contact button {
+.contact button,
+.note {
     font-size: 1.25em;
 }
 .about-main,
 .about-secondary,
-.contact {
+.blog-text,
+.contact,
+.note {
     text-align: justify;
 }
 footer,
@@ -102,6 +118,7 @@ footer {
 a:link,
 a:visited,
 .ah,
+.favorites,
 footer,
 .jumbotron h1,
 .picks h2,
@@ -127,7 +144,8 @@ footer,
     border-top: 2px solid #DEAE0C; /* orange */
     border-bottom: 2px solid #DEAE0C; /* orange */
 }
-.picks {
+.picks,
+.note {
     border-top: 2px solid #DEAE0C; /* orange */
     border-bottom: 2px solid #DEAE0C; /* orange */
 }
@@ -167,6 +185,10 @@ h1 {
 .icon-google-plus,
 .icon-twitter {
     margin-left: 50px;
+}
+.note {
+    margin-top: 15px;
+    padding: 15px;
 }
 .picks {
     padding: 15px 0px;
