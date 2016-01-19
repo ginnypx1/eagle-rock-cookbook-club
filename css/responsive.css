@@ -5,7 +5,9 @@
 		background-color: red;
 	}
 
-
+    .about-main {
+        height: 1450px;
+    }
 	.contactUs {
 		height: 600px;
 	}
