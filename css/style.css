@@ -1,197 +1,90 @@
-/* STANDARD PAGE RULES */
-#wrapper {
-    max-width: 1000px;
-    min-height: 100%;
-    position: relative;
-    margin-bottom: -40px;
-}
-#wrapper:after {
-    content: "";
-    display: block;
-}
-img {
-    max-width: 100%;
-}
-li {
-    list-style: none;
-}
-ul {
-    padding: 0;
-}
-/* FLEXBOX ____________________________________*/
-.choices {
-    display: -webkit-flex;
-    display: flex;
-    flex-flow: row wrap;
-    -webkit-flex-flow: row wrap;
-    -webkit-justify-content: center;
-    justify-content: space-around;
-}
-.choices li {
-    margin: auto;
-}
-.photos {
-    display: -webkit-flex;
-    display: flex;
-    flex-flow: row wrap;
-    -webkit-flex-flow: row wrap;
-    -webkit-justify-content: center;
-    justify-content: space-around;
-}
-.photos li {
-    margin: 10px;
-    border: 2px solid #DEAE0C; /* orange */
-}
-/* NAVBAR ____________________________________*/
-.navbar {
-    margin-bottom: 0px;
-}
+
 /* JUMBOTRON ____________________________________*/
 .jumbotron img {
     border: 2px solid #DEAE0C; /* orange */
     display: inline-block;
     float: left;
-    margin-left: 25px;
 }
-.jumbotron p {
-    padding: 10px 0px 10px 50px;
-    margin: 0px;
-}
-.maintext {
-    display: inline-block;
-}
-/* FONTS ____________________________________*/
+/* FONTS ________________________________________*/
 body {
     font-family: 'Montserrat', sans-serif;
 }
-.about-main,
-.about-secondary,
-.blog-text,
-.contactUs,
-.contact button,
-.note {
-    font-size: 1.25em;
-}
-.about-main,
-.about-secondary,
-.blog-text,
-.contact,
-.note {
-    text-align: justify;
-}
-footer,
+#footer,
 .jumbotron h1,
 .navbar,
-.time-info {
+h3 {
     font-family: 'Londrina Outline', cursive;
 }
-.icon-google-plus,
-.icon-twitter {
-    font-size: 2.5em;
-}
-.jumbotron h1,
-.time-info {
-    font-size: 7em;
+#headline,
+#contact-headline {
+    font-size: 8rem;
 }
 .navbar-brand {
-    font-size: 2em;
+    font-size: 2rem;
 }
-.navbar-collapse,
-footer {
-    font-size: 1.5em;
+.navbar {
+    font-size: 1.75rem;
 }
-.picks {
-    text-align: center;
+#footer p,
+#recipe-header {
+    font-size: 1.25rem;
 }
-.picks ul li {
-    font-size: 1.25em;
+#contact-content {
+    font-size: 2rem;
 }
-.tag {
-    font-size: 0.35em;
+#recipe-header {
+    letter-spacing: 1px;
 }
-/* COLORS ____________________________________*/
-.icon-google-plus,
-.icon-twitter,
+/* COLORS _______________________________________*/
 .dish {
     color: #3EB354; /* lime green */
 }
-a:link,
-a:visited,
-.ah,
+#main-nav a,
+a,
 .favorites,
-footer,
+#footer p,
 .jumbotron h1,
-.picks h2,
-.time-info {
+h3 {
     color: #009999; /* teal */
 }
 a:hover,
-a:active,
-.contactDetails h2,
+#main-nav a:hover,
 .name,
-strong {
+strong,
+#contact-us {
     color: #DEAE0C; /* orange */
 }
-button a:link,
-button a:visited,
-.contact button {
-    background-color: #009999; /* teal */
+#secondary-content,
+#contact-content {
+    color: #888888; /* grey */
+}
+.btn a {
+    text-decoration: none;
     color: white;
 }
-footer,
+/* BACKGROUNDS _______________________________________*/
+#footer,
 .jumbotron {
     background: url("../img/retina_wood_@2X.png");
     border-top: 2px solid #DEAE0C; /* orange */
     border-bottom: 2px solid #DEAE0C; /* orange */
 }
-.picks,
-.note {
-    border-top: 2px solid #DEAE0C; /* orange */
-    border-bottom: 2px solid #DEAE0C; /* orange */
+#recipe-header {
+    background-color: #3EB354; /* lime green */
 }
-.tag {
-    color: black;
+.btn {
+    background-color: #009999; /* teal */
 }
-/* SPACING ____________________________________*/
-.about-main,
-.contact {
-    margin-top: 15px;
-    height: 750px;
+/* LISTS ____________________________________*/
+#recipes-cooked {
+    padding-left: 0;
+    list-style: none;
 }
-button {
-    display: inline-block;
-    margin-left: 50px;
-    padding: 10px;
-    width: 150px;
-}
-.contact button {
-    margin: 0px;
-}
-.contact-info li {
-    display: inline-block;
-}
-.contactUs {
-    height: 400px;
-}
-footer {
-    text-align: center;
-}
-h1 {
-    padding-left: 35px;
-}
-.contact-info {
-    margin: 20px 50px;
-}
-.icon-google-plus,
-.icon-twitter {
-    margin-left: 50px;
-}
-.note {
-    margin-top: 15px;
-    padding: 15px;
-}
-.picks {
-    padding: 15px 0px;
+/* PHOTOS ____________________________________*/
+#photo-gallery img {
+    border: 2px solid #DEAE0C; /* orange */
+    width: 250px;
+    height: 250px;
 }
 /* ICONS ____________________________________*/
 @font-face {

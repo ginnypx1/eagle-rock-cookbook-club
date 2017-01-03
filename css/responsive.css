@@ -1,95 +1,62 @@
-
-/*PHONES to iPHONES*/
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-	/*body {
-		background-color: red;
-	}*/
-
-    .about-main {
-        height: 1450px;
+/* Extra-small devices (portrait phones, less than 544px) */
+@media screen and (max-width: 543px) {
+    /*body {
+        background-color: red;
+    }*/
+    .navbar-brand {
+        font-size: 1.5rem;
     }
-	.contactUs {
-		height: 600px;
-	}
+    .navbar {
+        font-size: 1rem;
+    }
+    #headline {
+        font-size: 5.5rem;
+    }
+    #contact-headline {
+        font-size: 3rem;
+    }
+    #photo-gallery img {
+        width: 125px;
+        height: 125px;
+    }
 }
 
-/*iPHONES6 to GALAXY*/
-@media only screen and (min-width: 360px) and (max-width: 640px) {
-	/*body {
-		background-color: orange;
-	}*/
-	.about-main {
-		height: 1150px;
-	}
-	.contact {
-		height: 400px;
-	}
-	.time-info {
-		font-size: 4em;
-		text-align: center;
-	}
-	.jumbotron p {
-		padding: 10px 30px;
-	}
-	.jumbotron h1 {
-		font-size: 6em;
-		padding-left: 30px;
-	}
-	/* rules for cookbook selection on index.html */
-	.choices li {
-		margin: 10px;
-	}
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 544px) and (max-width: 767px) {
+    /*body {
+        background-color: orange;
+    }*/
+    #contact-headline {
+        font-size: 5rem;
+    }
+    #photo-gallery img {
+        width: 200px;
+        height: 200px;
+    }
 }
 
-/*TABLETS*/
-@media only screen and (min-width: 768px) and (max-width: 1000px) {
-	/*body {
-		background-color: yellow;
-	}*/
-	.time-info {
-		text-align: center;
-	}
-	.jumbotron p {
-		padding-left: 30px;
-	}
-	.contact {
-		height: 300px;
-	}
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    /*body {
+        background-color: yellow;
+    }*/
+    #headline {
+        font-size: 6rem;
+    }
+    #contact-headline {
+        font-size: 5rem;
+    }
 }
 
-/*PRINT*/
-@media print {
-	* {
-		background: transparent !important;
-		color: #000 !important;
-	}
-	footer,
-	nav {
-		display: none;
-	}
-	body,
-	.jumbotron p {
-		font-size: 1em;
-	}
-	.jumbotron h1 {
-		font-size: 3em;
-	}
-	.jumbotron img {
-		width: 20%;
-		height: 20%;
-	}
-	.choices img {
-		width: 10%;
-		height: 10%;
-	}
-	.about-main {
-		height: 500px;
-	}
-	.contact {
-		height: 200px;
-	}
-	button {
-		width: 400px;
-		font-size: 1em;
-	}
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    /*body {
+        background-color: green;
+    }*/
+    #contact-headline {
+        font-size: 6rem;
+    }
 }
+
+/* Extra large devices (large desktops) */
+/* No media query, no upper bound on its width */
