@@ -35,6 +35,10 @@ h3 {
 #recipe-header {
     letter-spacing: 1px;
 }
+strong {
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+}
 /* COLORS _______________________________________*/
 .dish {
     color: #3EB354; /* lime green */
@@ -85,6 +89,9 @@ strong,
     border: 2px solid #DEAE0C; /* orange */
     width: 250px;
     height: 250px;
+}
+#vote-choices img {
+    width: 300px;
 }
 /* ICONS ____________________________________*/
 @font-face {

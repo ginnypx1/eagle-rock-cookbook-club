@@ -12,12 +12,18 @@
     #headline {
         font-size: 5.5rem;
     }
+    .lead {
+        font-size: 1em;
+    }
     #contact-headline {
         font-size: 3rem;
     }
     #photo-gallery img {
         width: 125px;
         height: 125px;
+    }
+    #vote-choices .d-flex {
+        flex-direction: column;
     }
 }
 
@@ -27,11 +33,14 @@
         background-color: orange;
     }*/
     #contact-headline {
-        font-size: 5rem;
+        font-size: 4rem;
     }
     #photo-gallery img {
         width: 200px;
         height: 200px;
+    }
+    #vote-choices img {
+        width: 175px;
     }
 }
 
@@ -45,6 +54,9 @@
     }
     #contact-headline {
         font-size: 5rem;
+    }
+    #vote-choices img {
+        width: 250px;
     }
 }
 

@@ -12,10 +12,7 @@
     <title>Eagle Rock Cookbook Club | Blog</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-flex.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <!-- Unique CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
@@ -26,34 +23,67 @@
 
   <body>
     <!-- navbar -->
-    <nav id="main-nav" class="navbar navbar-light">
+    <nav class="navbar navbar-toggleable-md navbar-light" id="main-nav">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <a class="navbar-brand" href="index.html"><span class="icon-spoon-knife">ERCC</span></a>
-      <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
-      <div class="collapse navbar-toggleable-sm" id="navbarResponsive">
-        <ul class="nav navbar-nav float-md-right">
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="blog.html">Blog<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup" id="navbarNav">
+        <div class="navbar-nav navbar-right">
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="blog.html">Blog</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </div>
       </div>
     </nav>
 
     <!-- jumbotron -->
     <div class="jumbotron jumbotron-fluid py-1">
-      <img class="ml-2 mr-2" src="img/ItsAllEasy.jpg" height="250" width="200" alt="The cover of Gwyneth Paltrow's It's All Easy cookbook">
-      <div class="container">
+      <img class="mt-2 mb-2 ml-3 mr-3" src="img/ANewWayToDinner.jpg" height="250" width="200" alt="The cover of Food 52's A New Way To Dinner cookbook">
+      <div class="container p-5">
+        <h1 id="contact-headline" class="display-1">Our Fourth Party</h1>
+        <p class="lead">Sunday, January 15, 2016</p>
+        <p class="lead">"A New Way To Dinner" by Amanda Hesser &amp; Merrill Stubbs</p>
+      </div>
+    </div>
+    <!-- main content -->
+    <div class="container pb-3">
+    <!-- story of the meeting -->
+    <div class="container px-1">
+        <p>We had a fantastic time tasting many of the dishes from <a href="https://www.amazon.com/Food52-New-Way-Dinner-Strategies/dp/0399578005/ref=sr_1_1?ie=UTF8&qid=1480716198&sr=8-1&keywords=a+new+way+to+dinner+by+amanda+hesser+%26+merrill+stubbs">A NEW WAY TO DINNER</a> on Sunday, January 15. Although we totally forgot to take pictures, the party was rocking, and despite the fact that every recipe in <a href="https://www.amazon.com/Food52-New-Way-Dinner-Strategies/dp/0399578005/ref=sr_1_1?ie=UTF8&qid=1480716198&sr=8-1&keywords=a+new+way+to+dinner+by+amanda+hesser+%26+merrill+stubbs">A NEW WAY TO DINNER</a> serves about 12 people, every single bit of food was gone by the end of the evening.</p>
+        <p>Our favorite dishes were pretty much everything there -- the <strong>Chicken Fingers</strong> were incredible, the <strong>Applesauce Cake</strong> was divine, and the <strong>Broccoli, Lemon, &amp; Parmesan Soup</strong> was a surprising standout.</p>
+        <p>The general opinion of <a href="https://www.amazon.com/Food52-New-Way-Dinner-Strategies/dp/0399578005/ref=sr_1_1?ie=UTF8&qid=1480716198&sr=8-1&keywords=a+new+way+to+dinner+by+amanda+hesser+%26+merrill+stubbs">A NEW WAY TO DINNER</a> was that it's a good, but extremely frustrating cookbook. It inspired all of us to try something new -- but usually reaching for another cookbook to do so, or figuring out how to adapt their weekly meal plan to serve less, take out part of the week, or just make things a little more winter friendly. We were surprised by the amount of times a recipe required you to go back and make another recipe, or unapologeticly admitted halfway through that you just cooked about five times more than you needed in the first place, and we were all a little bit frustrated about how hard it was to find a certain dish in the messy layout. However, <a href="https://www.amazon.com/Food52-New-Way-Dinner-Strategies/dp/0399578005/ref=sr_1_1?ie=UTF8&qid=1480716198&sr=8-1&keywords=a+new+way+to+dinner+by+amanda+hesser+%26+merrill+stubbs">A NEW WAY TO DINNER</a> taught us all a little something about meal planning, and I, for one, will ever be grateful that it made me learn to love a good chicken thigh.</p>
+        <p>We also hosted our first ever cookbook swap, and hopefully some of you went home with some great new finds. If you'd like to try Curing &amp; Smoking your own meat -- I still have the book for that...</p>
+    </div>
+
+    <!-- full list of dishes cooked -->
+    <div class="container px-1">
+      <ul id="recipes-cooked">
+        <li id="recipe-header" class="list-group-item text-white">Recipes we tasted:</li>
+        <li class="list-group-item"><strong class="name">Adriene</strong> cooked the <strong class="dish">Roasted Applesauce, the Applesauce Cake and the Applesauce Mess</strong>.</li>
+        <li class="list-group-item"><strong class="name">Annie</strong> cooked the <strong class="dish">Brussels Sprouts Salad with Anchovy Dressing</strong>.</li>
+        <li class="list-group-item"><strong class="name">Debbi</strong> cooked the <strong class="dish">Broccoli, Lemon, &amp; Parmesan Soup</strong>.</li>
+        <li class="list-group-item"><strong class="name">Ginny</strong> cooked the <strong class="dish">Chicken Fingers</strong>.</li>
+        <li class="list-group-item"><strong class="name">Jena</strong> cooked the <strong class="dish">Eton Mess</strong>.</li>
+        <li class="list-group-item"><strong class="name">Missy</strong> cooked the <strong class="dish">Crispy Crunchy Oatmeal Cookies</strong>.</li>
+        <li class="list-group-item"><strong class="name">Roz</strong> cooked the <strong class="dish">Braised Chickpeas and Celery</strong>.</li>
+      </ul>
+    </div>
+
+    </div> <!-- end section container -->
+
+    <!-- jumbotron -->
+    <div class="jumbotron jumbotron-fluid py-1">
+      <img class="mt-2 mb-2 ml-3 mr-3" src="img/ItsAllEasy.jpg" height="250" width="200" alt="The cover of Gwyneth Paltrow's It's All Easy cookbook">
+      <div class="container p-5">
         <h1 id="contact-headline" class="display-1">Our Third Party</h1>
         <p class="lead">Sunday, July 17, 2106</p>
         <p class="lead">"It's All Easy" by Gwyneth Paltrow</p>
       </div>
     </div>
     <!-- main content -->
+    <div class="container pb-3">
+
     <!-- story of the meeting -->
     <div class="container px-1">
       <p>Our third meeting was a fantastic sit-down under the stars. Despite heavy doubts by some members (OK, me), <a href="http://www.amazon.com/Its-All-Easy-Delicious-Super-Busy/dp/1455584215/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1463867335&amp;sr=1-1&amp;keywords=gwyneth+paltrow">"It's All Easy"</a> turned out to be a super userful and delicious cookbook, even though we all still find it hard to believe that Gwyneth Paltrow cooks and eats human food.</p>
@@ -66,87 +96,92 @@
     <!-- full list of dishes cooked -->
     <div class="container px-1">
       <ul id="recipes-cooked">
-        <li><strong class="name">Debra</strong> cooked the <strong class="dish">Falafel</strong>.</li>
-        <li><strong class="name">Ginny</strong> cooked the <strong class="dish">Soft Polenta with Roasted Cherry Tomatoes</strong>.</li>
-        <li><strong class="name">Jena</strong> cooked the <strong class="dish">Spring Fattoush Salad</strong>.</li>
-        <li><strong class="name">Julie</strong> cooked the <strong class="dish">Cilantro Hummus and Beet Chips</strong> and the <strong class="dish">Zuni Sheet Pan Chicken</strong>.</li>
-        <li><strong class="name">Kyle</strong> grilled the <strong class="dish">Salmon Skewers with Chermoula</strong>.</li>
-        <li><strong class="name">Lauren</strong> cooked the <strong class="dish">Cauliflower Tabbouleh</strong> and the <strong class="dish">Roasted Cauliflower with Curry and Lime</strong>.</li>
-        <li><strong class="name">Melissa G.</strong> cooked the <strong class="dish">Singapore Rice Noodles</strong>.</li>
+        <li id="recipe-header" class="list-group-item text-white">Recipes we tasted:</li>
+        <li class="list-group-item"><strong class="name">Debra</strong> cooked the <strong class="dish">Falafel</strong>.</li>
+        <li class="list-group-item"><strong class="name">Ginny</strong> cooked the <strong class="dish">Soft Polenta with Roasted Cherry Tomatoes</strong>.</li>
+        <li class="list-group-item"><strong class="name">Jena</strong> cooked the <strong class="dish">Spring Fattoush Salad</strong>.</li>
+        <li class="list-group-item"><strong class="name">Julie</strong> cooked the <strong class="dish">Cilantro Hummus and Beet Chips</strong> and the <strong class="dish">Zuni Sheet Pan Chicken</strong>.</li>
+        <li class="list-group-item"><strong class="name">Kyle</strong> grilled the <strong class="dish">Salmon Skewers with Chermoula</strong>.</li>
+        <li class="list-group-item"><strong class="name">Lauren</strong> cooked the <strong class="dish">Cauliflower Tabbouleh</strong> and the <strong class="dish">Roasted Cauliflower with Curry and Lime</strong>.</li>
+        <li class="list-group-item"><strong class="name">Melissa G.</strong> cooked the <strong class="dish">Singapore Rice Noodles</strong>.</li>
         <br>
-        <li><strong class="name">Melissa B.</strong> baked the <strong class="dish">Coconut Key Lime Tarts</strong>.</li>
-        <li><strong class="name">Ginny</strong> cooked the <strong class="dish">Chocolate Truffles</strong>.</li>
+        <li class="list-group-item"><strong class="name">Melissa B.</strong> baked the <strong class="dish">Coconut Key Lime Tarts</strong>.</li>
+        <li class="list-group-item"><strong class="name">Ginny</strong> cooked the <strong class="dish">Chocolate Truffles</strong>.</li>
         <br>
-        <li><strong class="name">Ginny</strong> mixed up the <strong class="dish">Lemongrass and Mint Tisane</strong> as well as the <strong class="dish">Rosemary, Lemon and Chile Tisane</strong>.</li>
+        <li class="list-group-item"><strong class="name">Ginny</strong> mixed up the <strong class="dish">Lemongrass and Mint Tisane</strong> as well as the <strong class="dish">Rosemary, Lemon and Chile Tisane</strong>.</li>
       </ul>
     </div>
     <!-- photos -->
     <div id="photo-gallery" class="container">
-      <div class="row">
-        <div class="col-xs py-1">
+      <div class="d-flex flex-wrap justify-content-around">
+        <div class="p-1">
           <img src="img/Meeting3/Cookbook.jpg" alt="It's All Easy cookbook">
         </div>
-        <div class="col-xs py-1">
+        <div class="p-1">
           <img src="img/Meeting3/JulieBeetsOven.jpg" alt="Beets in the oven">
         </div>
-        <div class="col-xs py-1">
+        <div class="p-1">
           <img src="img/Meeting3/JulieBeetChips.jpg" alt="Julie's Beet Chips">
         </div>
-        <div class="col-xs py-1">
+        <div class="p-1">
           <img src="img/Meeting3/JulieBeetsHummus.jpg" alt="Julie's Beets and Cilantro Hummus">
         </div>
-        <div class="col-xs py-1">
+        <div class="p-1">
           <img src="img/Meeting3/JulieCilantroHummus.jpg" alt="Julie's Beet Chips and Cilantro Hummus">
         </div>
-        <div class="col-xs py-1">
+        <div class="p-1">
           <img src="img/Meeting3/JulieChickenOven.jpg" alt="Zuni Chicken in the Oven">
         </div>
-        <div class="col-xs py-1">
+        <div class="p-1">
           <img src="img/Meeting3/JulieZuniChicken.jpg" alt="Zuni Sheet Pan Chicken">
         </div>
-        <div class="col-xs py-1">
+        <div class="p-1">
           <img src="img/Meeting3/JulieGreenBeans.jpg" alt="Eggplant and Green Beans">
         </div>
-        <div class="col-xs py-1">
+        <div class="p-1">
           <img src="img/Meeting3/JulieShrimpSalad.jpg" alt="Shrimp Salad">
         </div>
-        <div class="col-xs py-1">
+        <div class="p-1">
           <img src="img/Meeting3/JulieSingaporeRiceNoodles.jpg" alt="Singapore Rice Noodles">
         </div>
-        <div class="col-xs py-1">
+        <div class="p-1">
           <img src="img/Meeting3/Table1.jpg" alt="The spread">
         </div>
-        <div class="col-xs py-1">
+        <div class="p-1">
           <img src="img/Meeting3/Table2.jpg" alt="Another picture of the feast spread">
         </div>
-        <div class="col-xs py-1">
+        <div class="p-1">
           <img src="img/Meeting3/Table3.jpg" alt="Our feast">
         </div>
-        <div class="col-xs py-1">
+        <div class="p-1">
           <img src="img/Meeting3/Tisanes.jpg" alt="The tisanes">
         </div>
-        <div class="col-xs py-1">
+        <div class="p-1">
           <img src="img/Meeting3/MelissaLaurenGinnyJulie.jpg" alt="Melissa Lauren Ginny and Julie">
         </div>
-        <div class="col-xs py-1">
+        <div class="p-1">
           <img src="img/Meeting3/DebbieMelissaJena.jpg" alt="Debbie Melissa and Jena">
         </div>
-        <div class="col-xs py-1">
+        <div class="p-1">
           <img src="img/Meeting3/JenaMelissa.jpg" alt="Jena and Melissa">
         </div>
       </div>
     </div>
 
+    </div> <!-- end section container -->
+
     <!-- jumbotron -->
     <div class="jumbotron jumbotron-fluid py-1">
-      <img class="ml-2 mr-2" src="img/MyKitchenYear.jpg" height="250" width="200" alt="The cover of Ruth Reichl's My Kitchen Year cookbook">
-      <div class="container">
+      <img class="mt-2 mb-2 ml-3 mr-3" src="img/MyKitchenYear.jpg" height="250" width="200" alt="The cover of Ruth Reichl's My Kitchen Year cookbook">
+      <div class="container p-5">
         <h1 id="contact-headline" class="display-1">Our Second Party</h1>
         <p class="lead">Monday, March 14, 2106</p>
         <p class="lead">"My Kitchen Year" by Ruth Reichl</p>
       </div>
     </div>
     <!-- main content -->
+    <div class="container pb-3">
+
     <!-- story of the meeting -->
     <div class="container px-1">
       <p>Our second meeting was quite a bit different from the first. <a href="http://www.amazon.com/My-Kitchen-Year-Recipes-Saved/dp/140006998X/ref=sr_1_1?ie=UTF8&amp;qid=1458074593&amp;sr=8-1&amp;keywords=my+kitchen+year">"My Kitchen Year"</a> was a pretty great cookbook, and also a really, really thourough memoir of Ruth's life after 'Gourmet'. We agreed that the book was a little frustrating because Ruth assumes you all know certain temperatures foods cook at without being told and Ruth essentially has the palatte of a toddler -- she doesn't love vegetables, and she really doesn't love a lot of spices either. But one thing Ruth does love is dessert!</p>
@@ -157,24 +192,29 @@
     <!-- full list of dishes cooked -->
     <div class="container px-1">
       <ul id="recipes-cooked">
-        <li><strong class="name">Adriene</strong> cooked the <strong class="dish">Big New York Cheesecake</strong>.</li>
-        <li><strong class="name">Dara</strong> cooked the <strong class="dish">Broccoli Rabe Bruschetta</strong>.</li>
-        <li><strong class="name">Ginny</strong> cooked the <strong class="dish">Spaghetti Allo Scoglio</strong>.</li>
-        <li><strong class="name">Julie</strong> cooked the <strong class="dish">Custard in a Crust</strong>.</li>
-        <li><strong class="name">Melissa</strong> cooked the <strong class="dish">Lemon Pudding Cake</strong>.</li>
+        <li id="recipe-header" class="list-group-item text-white">Recipes we tasted:</li>
+        <li class="list-group-item"><strong class="name">Adriene</strong> cooked the <strong class="dish">Big New York Cheesecake</strong>.</li>
+        <li class="list-group-item"><strong class="name">Dara</strong> cooked the <strong class="dish">Broccoli Rabe Bruschetta</strong>.</li>
+        <li class="list-group-item"><strong class="name">Ginny</strong> cooked the <strong class="dish">Spaghetti Allo Scoglio</strong>.</li>
+        <li class="list-group-item"><strong class="name">Julie</strong> cooked the <strong class="dish">Custard in a Crust</strong>.</li>
+        <li class="list-group-item"><strong class="name">Melissa</strong> cooked the <strong class="dish">Lemon Pudding Cake</strong>.</li>
       </ul>
     </div>
 
+    </div> <!-- end section container -->
+
     <!-- jumbotron -->
     <div class="jumbotron jumbotron-fluid py-1">
-      <img class="ml-2 mr-2" src="img/NearAndFar.jpg" height="250" width="200" alt="The cover of the Near and Far cookbook">
-      <div class="container">
+      <img class="mt-2 mb-2 ml-3 mr-3" src="img/NearAndFar.jpg" height="250" width="200" alt="The cover of the Near and Far cookbook">
+      <div class="container p-5">
         <h1 id="contact-headline" class="display-1">Our First Party</h1>
         <p class="lead">Monday, January 11, 2016</p>
         <p class="lead">"Near &amp; Far" by Heidi Swanson</p>
       </div>
     </div>
     <!-- main content -->
+    <div class="container pb-5">
+
     <!-- story of the meeting -->
     <div class="container px-1">
       <p>Our first meeting was a huge success! It turns out that <a href="http://www.amazon.com/Near-Far-Recipes-Inspired-Travel/dp/1607745496/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1453145966&amp;sr=1-1&amp;keywords=near+and+far+cookbook">"Near &amp; Far"</a> is a fantastic cookbook. Also, we recruited some seriously talented cooks. Everyone ate, drank, chatted, made new friends, and had a blast!</p>
@@ -183,69 +223,72 @@
     <!-- full list of dishes cooked -->
     <div class="container px-1">
       <ul id="recipes-cooked">
-        <li><strong class="name">Adriene</strong> cooked the <strong class="dish">Spring Carrot &amp; Bean</strong> and the <strong class="dish">Red Lentil Hummus</strong>.</li>
-        <li><strong class="name">Anna</strong> cooked the <strong class="dish">Pasta with Cauliflower</strong>.</li>
-        <li><strong class="name">Colleen</strong> brought some <strong class="dish">Spicy Tuna &amp; Crispy Rice</strong> which should be in the next edition of "Near &amp; Far".</li>
-        <li><strong class="name">Debbie</strong> cooked the <strong class="dish">Mashed Yellow Split Peas</strong>.</li>
-        <li><strong class="name">Genevieve</strong> cooked the <strong class="dish">Brown Butter Tortellini</strong>.</li>
-        <li><strong class="name">Ginny</strong> cooked the <strong class="dish">Vaghareli Makai</strong>  and the <strong class="dish">Easy "Wheat" Bread</strong>.</li>
-        <li>Under tutelage from the wise Chef Toshi, <strong class="name">Janice</strong> cooked the <strong class="dish">Sake Glazed Mushrooms</strong> and the <strong class="dish">Brussels Sprouts with Karashi</strong>.</li>
-        <li><strong class="name">Jena</strong> cooked the <strong class="dish">Chive Dumplings</strong>.</li>
-        <li><strong class="name">Julie</strong> cooked the <strong class="dish">Carrot &amp; Sake Salad</strong> and the <strong class="dish">Strong Ginger Snaps</strong>.</li>
-        <li><strong class="name">Kit</strong> cooked the <strong class="dish">Sabayon</strong>.</li>
-        <li><strong class="name">Korelan</strong> cooked the <strong class="dish">Roasted Tomato Salad</strong>.</li>
-        <li><strong class="name">Lauren</strong> cooked the <strong class="dish">Sprout Salad</strong>.</li>
+        <li id="recipe-header" class="list-group-item text-white">Recipes we tasted:</li>
+        <li class="list-group-item"><strong class="name">Adriene</strong> cooked the <strong class="dish">Spring Carrot &amp; Bean</strong> and the <strong class="dish">Red Lentil Hummus</strong>.</li>
+        <li class="list-group-item"><strong class="name">Anna</strong> cooked the <strong class="dish">Pasta with Cauliflower</strong>.</li>
+        <li class="list-group-item"><strong class="name">Colleen</strong> brought some <strong class="dish">Spicy Tuna &amp; Crispy Rice</strong> which should be in the next edition of "Near &amp; Far".</li>
+        <li class="list-group-item"><strong class="name">Debbie</strong> cooked the <strong class="dish">Mashed Yellow Split Peas</strong>.</li>
+        <li class="list-group-item"><strong class="name">Genevieve</strong> cooked the <strong class="dish">Brown Butter Tortellini</strong>.</li>
+        <li class="list-group-item"><strong class="name">Ginny</strong> cooked the <strong class="dish">Vaghareli Makai</strong>  and the <strong class="dish">Easy "Wheat" Bread</strong>.</li>
+        <li class="list-group-item">Under tutelage from the wise Chef Toshi, <strong class="name">Janice</strong> cooked the <strong class="dish">Sake Glazed Mushrooms</strong> and the <strong class="dish">Brussels Sprouts with Karashi</strong>.</li>
+        <li class="list-group-item"><strong class="name">Jena</strong> cooked the <strong class="dish">Chive Dumplings</strong>.</li>
+        <li class="list-group-item"><strong class="name">Julie</strong> cooked the <strong class="dish">Carrot &amp; Sake Salad</strong> and the <strong class="dish">Strong Ginger Snaps</strong>.</li>
+        <li class="list-group-item"><strong class="name">Kit</strong> cooked the <strong class="dish">Sabayon</strong>.</li>
+        <li class="list-group-item"><strong class="name">Korelan</strong> cooked the <strong class="dish">Roasted Tomato Salad</strong>.</li>
+        <li class="list-group-item"><strong class="name">Lauren</strong> cooked the <strong class="dish">Sprout Salad</strong>.</li>
         <br>
-        <li><strong class="name">Melissa</strong> cooked the <strong class="dish">Almond Cake</strong> and none of us will ever forgive her dog. (RIP, delicious Almond Cake.)</li>
+        <li class="list-group-item"><strong class="name">Melissa</strong> cooked the <strong class="dish">Almond Cake</strong> and none of us will ever forgive her dog. (RIP, delicious Almond Cake.)</li>
         <br>
-        <li><strong class="name">Adriene</strong> mixed the <strong class="dish">Ruby Ginger Juice</strong>.</li>
-        <li><strong class="name">Ginny</strong> mixed the <strong class="dish">Saffron Gin &amp; Tonic</strong> and the <strong class="dish">Verde Gin &amp; Tonic</strong>.</li>
-        <li><strong class="name">Janice</strong> mixed the <strong class="dish">Plum Wine Sparkler</strong>.</li>
+        <li class="list-group-item"><strong class="name">Adriene</strong> mixed the <strong class="dish">Ruby Ginger Juice</strong>.</li>
+        <li class="list-group-item"><strong class="name">Ginny</strong> mixed the <strong class="dish">Saffron Gin &amp; Tonic</strong> and the <strong class="dish">Verde Gin &amp; Tonic</strong>.</li>
+        <li class="list-group-item"><strong class="name">Janice</strong> mixed the <strong class="dish">Plum Wine Sparkler</strong>.</li>
       </ul>
     </div>
     <!-- photos -->
     <div id="photo-gallery" class="container pb-3">
-      <div class="row">
-        <div class="col-xs py-1">
+      <div class="d-flex flex-wrap justify-content-around">
+        <div class="p-1">
           <img src="img/IMG_3715.jpg" alt="The Near &amp; Far spread of food">
         </div>
-        <div class="col-xs py-1">
+        <div class="p-1">
           <img src="img/IMG_3714.jpg" alt="Saffron and Verde Gin &amp; Tonics">
         </div>
-        <div class="col-xs py-1">
+        <div class="p-1">
           <img src="img/IMG_3716.jpg" alt="One chef samples the buffet">
         </div>
-        <div class="col-xs py-1">
+        <div class="p-1">
           <img src="img/IMG_3717.jpg" alt="Ginger Snaps, Carrot and Sake Salad, Carrots and White Beans and Red Lentil Hummus">
         </div>
-        <div class="col-xs py-1">
+        <div class="p-1">
           <img src="img/IMG_3718.jpg" alt="Vaghareli Makai, Roasted Brussels Sprouts, Quick Wheat Bread, and more dishes from Near and Far">
         </div>
-        <div class="col-xs py-1">
+        <div class="p-1">
           <img src="img/IMG_3719.jpg" alt="Saffron and Verde Gin &amp; Tonics, Ruby Ginger Juice and Plum Wine Sparkler">
         </div>
-        <div class="col-xs py-1">
+        <div class="p-1">
           <img src="img/IMG_3720.jpg" alt="Lauren, Julie and Janice chat">
         </div>
-        <div class="col-xs py-1">
+        <div class="p-1">
           <img src="img/IMG_3721.jpg" alt="Sampling the buffet">
         </div>
-        <div class="col-xs py-1">
+        <div class="p-1">
           <img src="img/IMG_3722.jpg" alt="Kit, Jena and Colleen chat">
         </div>
       </div>
     </div>
 
+    </div> <!-- end section container -->
+
     <!-- footer -->
-    <nav id="footer" class="navbar navbar-fixed-bottom">
+    <nav id="footer" class="navbar fixed-bottom">
       <div class="container footer-container mx-auto" >
         <p class="text-xs-center mb-0">&copy; Eagle Rock Cookbook Club</p>
       </div>
     </nav>
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   </body>
 </html>
